@@ -13,14 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val repositroy = MoviesRepositroy(MoviesApi())
-
-
-        GlobalScope.launch(Dispatchers.Main) {
-            val movies = repositroy.getMovies()
-
-            Toast.makeText(this@MainActivity, movies.toString(), Toast.LENGTH_LONG).show()
-
-        }
-    }
+//        val repositroy = MoviesRepositroy(MoviesApi())
+//
+//
+//        GlobalScope.launch(Dispatchers.Main) {
+//            val movies = repositroy.getMovies()
+//
+//            Toast.makeText(this@MainActivity, movies.toString(), Toast.LENGTH_LONG).show()
+//
+//        }
+   }
 }
