@@ -1,8 +1,11 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.ui.movies
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.shahbaz.recyclerviewmvvm.data.models.Movies
+import com.shahbaz.recyclerviewmvvm.data.repositories.MoviesRepositroy
+import com.shahbaz.recyclerviewmvvm.utils.Corotunies
 import kotlinx.coroutines.Job
 
 class MoviesViewModel(

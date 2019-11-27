@@ -1,4 +1,4 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.ui.movies
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.shahbaz.recyclerviewmvvm.R
+import com.shahbaz.recyclerviewmvvm.data.network.MoviesApi
+import com.shahbaz.recyclerviewmvvm.data.repositories.MoviesRepositroy
 import kotlinx.android.synthetic.main.movies_fragment.*
 
 
@@ -30,9 +33,13 @@ class MoviesFragment : Fragment() {
 
         val api = MoviesApi()
 
-        val repositroy = MoviesRepositroy(api)
+        val repositroy =
+            MoviesRepositroy(api)
 
-        factory = MoviesViewmOdelFactory(repositroy)
+        factory =
+            MoviesViewmOdelFactory(
+                repositroy
+            )
 
         viewModel = ViewModelProviders.of(this, factory).get(MoviesViewModel::class.java)
 
@@ -42,7 +49,8 @@ class MoviesFragment : Fragment() {
             moviesRecyclerview.also {
                 it.layoutManager=LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
-                it.adapter=MoviesAdapter(movies)
+                it.adapter=
+                    MoviesAdapter(movies)
             }
         })
 

@@ -1,4 +1,4 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.data.repositories
 
 import retrofit2.Response
 import java.io.IOException
@@ -13,7 +13,9 @@ abstract class SafeApiRequest {
             return response.body()!!
         } else {
 
-            throw  ApiException(response.code().toString())
+            throw  ApiException(
+                response.code().toString()
+            )
         }
     }
 }

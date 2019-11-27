@@ -10,7 +10,7 @@
 
         <variable
             name="movie"
-            type="com.shahbaz.recyclerviewmvvm.Movies" />
+            type="com.shahbaz.recyclerviewmvvm.data.models.Movies" />
     </data>
 
     <LinearLayout

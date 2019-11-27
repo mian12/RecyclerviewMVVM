@@ -1,11 +1,8 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.shahbaz.recyclerviewmvvm.R
 
 class MainActivity : AppCompatActivity() {
 

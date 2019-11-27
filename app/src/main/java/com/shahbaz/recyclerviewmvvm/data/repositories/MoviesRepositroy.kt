@@ -1,4 +1,6 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.data.repositories
+
+import com.shahbaz.recyclerviewmvvm.data.network.MoviesApi
 
 class MoviesRepositroy(
    private  val api: MoviesApi

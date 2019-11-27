@@ -1,4 +1,4 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.data.models
 
 data class Movies(
     val id: Int,

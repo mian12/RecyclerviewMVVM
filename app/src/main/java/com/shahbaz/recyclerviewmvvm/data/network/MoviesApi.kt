@@ -1,5 +1,6 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.data.network
 
+import com.shahbaz.recyclerviewmvvm.data.models.Movies
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

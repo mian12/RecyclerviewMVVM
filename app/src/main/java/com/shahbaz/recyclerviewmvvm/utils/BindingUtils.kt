@@ -1,4 +1,4 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.utils
 
 
 import android.widget.ImageView

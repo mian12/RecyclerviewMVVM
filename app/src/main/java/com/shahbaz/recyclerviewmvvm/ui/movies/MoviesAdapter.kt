@@ -1,9 +1,11 @@
-package com.shahbaz.recyclerviewmvvm
+package com.shahbaz.recyclerviewmvvm.ui.movies
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.shahbaz.recyclerviewmvvm.R
+import com.shahbaz.recyclerviewmvvm.data.models.Movies
 import com.shahbaz.recyclerviewmvvm.databinding.RecyclerviewMovieBinding
 
 class MoviesAdapter(
