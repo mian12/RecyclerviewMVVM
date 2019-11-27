@@ -9,7 +9,8 @@ import com.shahbaz.recyclerviewmvvm.data.models.Movies
 import com.shahbaz.recyclerviewmvvm.databinding.RecyclerviewMovieBinding
 
 class MoviesAdapter(
-    private val moviesList: List<Movies>
+    private val moviesList: List<Movies>,
+private val listener: RecyclerviewItemClickListener
 
 ) : RecyclerView.Adapter<MoviesAdapter.MoviesViewHolder>() {
 
@@ -29,6 +30,16 @@ class MoviesAdapter(
     override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
 
         holder.recyclerviewMovieBinding.movie = moviesList[position]
+
+        holder.recyclerviewMovieBinding.layoutLike.setOnClickListener {
+
+            listener.onRecyclerviewItemClick(holder.recyclerviewMovieBinding.layoutLike,moviesList[position])
+        }
+
+        holder.recyclerviewMovieBinding.buttonBook.setOnClickListener {
+
+            listener.onRecyclerviewItemClick(holder.recyclerviewMovieBinding.buttonBook,moviesList[position])
+        }
     }
 
 
